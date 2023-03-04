@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--    <test verbose="2" preserve-order="true" name="C:/Users/EKTA/IdeaProjects/TestNGTestParameter">-->
+    <test name="Browser firefox">
+        <parameter name="browser" value="FireFox"></parameter>
+        <classes>
+            <class name="com.bridgelabz.test.FbLoginUsingRobotClass">
+                <methods>
+                    <include name="RobotClass"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Browser chrome">
+    <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="com.bridgelabz.test.JavaScriptExecutor">
+                <methods>
+                    <include name="Execute"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Browser Chrome">
+    <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="com.bridgelabz.test.WebinarScreenDataProvider">
+                <methods>
+                    <include name="WebinarScreen"/>
+                    <include name="phoneNo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
